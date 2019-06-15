@@ -3,224 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>李京霞的私人网站</title>
-	<link rel="icon" href="images/wg-icon.jpg">
-	<style type="text/css">
-	* {
-		margin: 0px;
-		padding: 0px;
-	}
-	body{
-		width: 100%;
-		height: 2500px;
-		background: url(image/bg2.gif);
-		position: relative;
-	}
-	.hudie {
-		width: 200px;
-		height: 160px;
-		position: fixed;
-		top: 150px;
-		left: 150px;
-		background: url(image/timg2.gif);
-		background-size: 100%;
-	}
-	.hudie2 {
-		width: 200px;
-		height: 160px;
-		position: fixed;
-		top: 150px;
-		right: 150px;
-		background: url(image/timg2.gif);
-		background-size: 100%;
-	}
-	.cao {
-		width: 500px;
-		height: 260px;
-		margin: -150px auto -35px;
-		background: url(image/timg1.gif) no-repeat;
-	}
-	.title1{
-		text-align:center; margin-top: 30px;
-	}
-	span {
-			font-size: 60px;
-	}
-	.g{
-		color: skyblue;
-	}
-	.o{
-		color: orange;
-	}
-	.l{
-		color: rgb(86, 14, 219);
-	}
-	.e{
-		color: red;
-	}
-	.f{
-		color: rgb(243, 62, 168);
-	}  
-	/* 3D旋转相册 */
-	#perspective{
-		perspective:800px;
-	}
-	#wrap{
-		position: relative;
-		width: 133px;
-		height: 200px;
-		margin: 200px auto 0;
-		transform-style: preserve-3d;/*指定这元素的子元素是怎样在3D空间内呈现*/
-		transform: rotateX(-20deg);
-	}
-	#wrap div {
-		position: absolute;
-		width: 135px;
-		height: 126px;
-		background: url(image/hua2.jpg) no-repeat;
-		background-position: -22px -194px;
-		background-size: 512px;
-	}
-	#wrap img{
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		transform: rotateY(0deg);/*位移*/
-		transition: 1s;/*过渡*/
-	}
-	/* 3D旋转盒子 */
-	.quanbu {
-            perspective: 1000px;
-			margin-top: 500px;
-        }
-        .hz1 {
-            width: 250px;
-            height: 250px;
-            position: relative;
-			margin: 200px auto;
-			transform-style: preserve-3d;
-            animation: hz1 3s linear infinite;
-        }
-        @keyframes hz1 {
-            from {
-                transform: rotate3d(1,1,0,0deg);
-            }
-            to {
-                transform: rotate3d(1,1,0,360deg);
-            }
-        }
-        @keyframes hz2 {
-            from {
-                
-                transform: translateZ(120px) rotate3d(-1,1,0,0deg);
-            }
-            to {
-                transform: translateZ(120px) rotate3d(-1,1,0,360deg);
-            }
-        }
-        .hz1>div {
-            position: absolute;
-            width: 250px;
-            height: 250px;
-            line-height: 250px;
-            text-align: center;
-            background: url(image/pic.jpg) no-repeat;
-            background-size: 100%;
-            background-color: rgba(173, 171, 171, 0.5);
-            transform-style: preserve-3d;
-        }
-        .box1 {
-            transform:translateZ(130px);    
-        }
-        .box2 {
-            transform:translateX(-130px) rotateY(-90deg);
-        }
-        .box3 {
-            transform:translateZ(-130px) rotateY(-180deg);
-        }
-        .box4 {
-            transform:translateX(130px) rotateY(90deg);
-        }
-        .box5 {
-            transform:translateY(-130px) rotateX(90deg);
-        }
-        .box6 {
-            transform:translateY(130px) rotateX(-90deg);
-        }
-        .hz01 {
-            width: 150px;
-            height: 150px;
-            margin: 50px auto;
-            position: relative;
-			transform-style: preserve-3d;
-            transform: translateZ(100px);
-            animation: hz2 3s linear infinite;
-        }
-        .hz01>div {
-            position: absolute;
-            width: 150px;
-            height: 150px;
-            line-height: 150PX;
-            text-align: center;
-            background: url(image/pig.jpg) no-repeat;
-            background-size: 100%;
-            background-color: rgba(204, 19, 19, 0.5);
-        }
-        .box01 {
-            transform:translateZ(77px);
-        }
-        .box02 {
-            transform:translateX(-77px) rotateY(-90deg);
-        }
-        .box03 {
-            transform:translateZ(-77px) rotateY(-180deg);
-        }
-        .box04 {
-            transform:translateX(77px) rotateY(90deg);
-        }
-        .box05 {
-            transform:translateY(77px) rotateX(90deg);
-        }
-        .box06 {
-            transform:translateY(-77px) rotateX(-90deg);
-        }
-
-		/* 底部 */
-		.footer {
-			width: 100%;
-			height: 100px;
-			position: absolute;
-			left: 0;
-			bottom: 0;
-		}
-		.shan {
-        	width: 100%;
-        	height: 115px;
-        	background: url(image/bg1.png) no-repeat;
-        	background-size: 100%;
-        }
-        .xong{
-            width: 200px;
-            height: 100px;
-            background: url(image/bear.png) no-repeat;
-            animation: xong 1s steps(8) infinite, box 5s linear infinite forwards; 
-        }
-        @keyframes xong {
-            0% {
-                background-position: 0 0;
-            }
-            100% {
-                background-position: -1600px 0;
-            }
-        }
-        @keyframes box {
-            0% {
-                transform: translateX(0);
-            }
-            100% {
-                transform: translateX(1500px);
-            }
-        }
-	</style>
+	<link rel="icon" href="image/wg-icon.jpg">
+	<link rel="stylesheet" href="css/index.css">
 </head>
 <body>
 	<!-- 顶部 -->
@@ -317,7 +101,28 @@
 				</div>
 			</div>
 	</div>
-	
+	<!-- 中部 -->
+	<div class="zhaopian">
+		<div class="xc1">
+			<img src="image/21.jpg" class="img1" alt="">
+			<img src="image/22.jpg" class="img2" alt="">
+			<img src="image/24.jpg" class="img3" alt="">
+		</div>
+		<div class="xc2">
+			<img src="image/28.jpg" alt="">
+			<img src="image/25.jpg" alt="">
+			<img src="image/31.jpg" alt="">
+		</div>
+		<div class="xc3">
+			<div>
+				<img src="image/26.jpg" alt="">
+				<img src="image/27.jpg" alt="">
+			</div>
+			<div>
+				<img src="image/23.jpg" alt="">
+			</div>
+		</div>
+	</div>
 	<div class="footer">
 		<div class="shan">
 			<div class="xong"></div>
